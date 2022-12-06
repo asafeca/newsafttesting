@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>New Saft</title>
+</head>
+
+<body>
+
+  <div class="content" role="main">
+
+    <!-- Highlight Card -->
+    <div class="card highlight-card card-small">
+
+      <span>{{ title }} app is running!</span>
+
+    </div>
+
+    <div class="mdc-layout-grid">
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell">
+          <input type="file" (change)="loadFile($event)" />
+
+
+          <input type="button" (click)="validate()" value="Validar" />
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+
+<router-outlet></router-outlet>
